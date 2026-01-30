@@ -1,0 +1,229 @@
+/*css file*/
+
+  /*importing fonts*/
+  @font-face {
+    font-family: choumei;
+    src: url(choumei_font.ttf) format('truetype');
+  }
+  @font-face { /*doesnt work for some reason*/
+    font-family: huakang;
+    src: url(hua_kang_shing_shu.ttf) format('truetype');
+  }
+
+  *{
+  padding: 0%;
+  margin: 0%;
+  }
+  body{
+    background-color: #0D2951;
+  }
+  /*the top menu*/
+  #nav{
+    background-color: black;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 50px;
+  }
+  #nav ul{
+    margin: 40px;
+    text-align: center;
+  }
+  #nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+  }
+  #nav a{
+    text-decoration: none;
+    color: white;
+    font-family: choumei;
+    font-size: xx-small; /*doesnt work*/
+  }
+  #nav a:hover{
+    cursor: pointer;
+    color: #9cc5fe;
+  }
+  #logo{
+    height: 120px;  
+    position: absolute;
+    right: 45%;
+    top: 20px;
+  }
+  .reflections{
+    margin-left: 30px;
+  }
+  .home{
+    margin-left: 30px;
+  }
+
+  /*.box{
+    background-color: aquamarine;
+    border-radius: 20px 50px;
+    padding: 15px;
+    background-clip: padding-box;
+    text-align: center;
+  }*/
+
+  /*buttons*/
+  .btn{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 40px;
+    background: #fcff59;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 15px #fcff59;
+    border-left: solid transparent;
+    border-right: solid transparent;
+    border-top: solid transparent;
+    border-bottom: solid transparent;
+    position: absolute;
+    opacity: 10%;
+  }
+  /*.btn{
+    background-image: url(/images/z_blue_light.png);
+  }*/
+  .close img{
+    width: 100px;
+  }
+  .close img:hover{
+    filter: brightness(50%);
+    transition: all 0.2s ease-in;
+  }
+  .btn:hover{
+    cursor: pointer;
+    background:  #fcff59;
+    box-shadow: #fcff59;
+    opacity: 80%;
+    }
+
+   /*positioning each button*/
+  #schoolTemple_btn{
+    position: absolute; /*so that its based on its container*/
+    left: 53%;
+    top: 43%;
+    }
+  #symmetricalFountain_btn{
+    position: absolute;
+    left: 49%;
+    bottom: 29%;
+  }
+  #lonelyFlower_btn{
+    position: absolute;
+    left: 53%;
+    bottom: 28%;
+  }
+  #flowerDrain_btn{
+    position: absolute;
+    left: 40%;
+    top: 43%;
+  }
+  #deadWood_btn{
+    position: absolute;
+    left: 33%;
+    bottom: 34%;
+  }
+  #fireExtinguisher_btn{
+    position: absolute;
+    right: 27%;
+    bottom: 44%;
+  }
+  #schoolCafeteria_btn{
+    position: absolute;
+    left: 28%;
+    bottom: 34%;
+  }
+  #plumeria_btn{
+    position: absolute;
+    left: 28%;
+    bottom: 48%;
+  }
+  #grouchoGlasses_btn{
+    position: absolute;
+    right: 38%;
+    bottom: 34%;
+  }
+
+    /*the whole window*/
+  .overlay{
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 28%;
+    right: 28%;
+    background: #1a3f72;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 30px;
+  }
+  .overlay:target{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*for words in window*/
+  .content{
+    display: inline-block;
+    font-family: huakang; /*doesnt work for whatever reason*/
+    color: #9cc5fe;
+  }
+  .content img{
+    position: relative;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+  }
+  .popup{
+    margin: 70px auto;
+    padding: 20px;
+    top: 10px;
+    transition: all 5s ease-in; /*dont use ease-in-out or buttons will lag when u click out of em*/
+    text-align: center;
+  }
+  .popup .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 200ms;
+  }
+  .close{
+    bottom: 10px;
+  }
+
+  /*map*/
+  .map img{
+    width: 100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    border-radius: 30px;
+    position: relative;
+    /*border-style: double;*/
+  }
+
+  /*reflections page*/
+  .reflectionQ img{
+    width: 90%;
+    top: 50px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  .reflectionQ video{
+    height: 75vh;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  footer{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+  }
